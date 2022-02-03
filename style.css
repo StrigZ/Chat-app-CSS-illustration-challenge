@@ -26,7 +26,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 main::before,
