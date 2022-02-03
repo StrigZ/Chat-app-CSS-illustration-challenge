@@ -271,7 +271,7 @@ h1 {
 
 .chat__send-arrow {
     content: "";
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     position: absolute;
