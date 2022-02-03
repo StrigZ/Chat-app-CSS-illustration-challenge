@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7eab041d63.js" crossorigin="anonymous"></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
 </head>
+
 <body>
 
-  Samuel Green
-  Available to Walk
 
-  That sounds great. I’d be happy with that.
+    <main>
+        <figure class="app">
+            <figcaption class="app__caption">
+                <i class="app__caption-arrow fas fa-chevron-left"></i>
+                <img class="app__caption-pfp" src="./images/avatar.jpg" alt="Picture of Samuel">
+                <article class="app__caption-article">
+                    <p class="app__caption-name">Samuel Green</p>
+                    <p class="app__caption-status">Available to Walk</p>
+                    <i class="fas fa-ellipsis-v"></i>
+                </article>
+            </figcaption>
+            <div class="chat">
+                <p class="msg msg-from">That sounds great. I’d be happy with that.</p>
+                <p class="msg msg-from">Could you send over some pictures of your dog, please?</p>
+                <div class="chat__imgbox msg-to msg">
+                    <img class="img__chat-imgbox-item" src="./images/dog-image-1.jpg" alt="Picture of a dog">
+                    <img class="img__chat-imgbox-item" src="./images/dog-image-2.jpg" alt="Picture of a dog">
+                    <img class="img__chat-imgbox-item" src="./images/dog-image-3.jpg" alt="Picture of a dog">
+                </div>
+                <p class="msg msg-to">Here are a few pictures. She’s a happy girl!</p>
+                <p class="msg msg-to small">Can you make it?</p>
+                <p class="msg msg-from">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                <form class="chat__form">
 
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+                    <div class="option msg-from">
+                        <input form="30min" name="walk" type="radio" value="30min">
+                        <label for="30min">30 minute walk <em>$29</em></label>
+                    </div>
+                    <div class="option msg-from">
+                        <input id="60min" name="walk" type="radio" value="1hour">
+                        <label for="60min">1 hour walk <em>$49</em></label>
+                    </div>
+                </form>
+                <div class="chat__send">
+                    <input class="chat__send-input" type="text" placeholder="Type a message...">
+                    <i class="chat__send-arrow fas fa-chevron-left"></i>
+                </div>
+            </div>
+        </figure>
+        <section class="hero">
+            <h1 class="hero__title">Simple booking</h1>
+            <p class="hero__desc">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.</p>
+        </section>
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/StrigZ">StrigZ</a>.
+    </div>
 </body>
+
 </html>
