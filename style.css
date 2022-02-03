@@ -426,6 +426,5 @@ h1 {
         right: -50%;
         bottom: -100%;
         overflow: hidden;
-        clip-path: inset(0 0 50% 0);
     }
 }
